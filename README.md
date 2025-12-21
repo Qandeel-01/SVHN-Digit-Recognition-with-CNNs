@@ -79,6 +79,34 @@ Input (32, 32, 3)
 
 ---
 
+## Visualizations
+
+### Sample SVHN Images
+
+![Sample Images](images/01_sample_images.png)
+
+> Five random training samples showing the challenge of SVHN — background digits and varying contrast make classification harder than clean datasets like MNIST.
+
+### Adam Optimizer — Training & Validation Curves
+
+![Adam Training Curves](images/02_adam_training_curves.png)
+
+> Validation accuracy (orange) consistently stays above training accuracy throughout all 12 epochs — a direct result of Dropout(0.5) handicapping training while validation runs at full capacity. Final validation accuracy: **89.45 %**.
+
+### SGD Optimizer — Training & Validation Curves
+
+![SGD Training Curves](images/03_sgd_training_curves.png)
+
+> SGD starts slowly (epoch 1: ~20 % val accuracy) due to its fixed learning rate, then climbs steeply. Both curves converge closely by epoch 12, reaching **85.46 %** — lower than Adam within the same epoch budget.
+
+### Adam vs SGD — Comparison
+
+![Adam vs SGD Comparison](images/04_adam_vs_sgd_comparison.png)
+
+> Adam (solid) vs SGD (dashed). Adam reaches ~84 % validation accuracy immediately at epoch 1 while SGD is still near random. The ~4 % accuracy gap and significantly higher SGD loss in early epochs demonstrate Adam's adaptive learning rate advantage.
+
+---
+
 ## Key Findings
 
 1. **No overfitting** — validation accuracy consistently exceeds training accuracy due to Dropout(0.5) handicapping the model during training while validation runs at full capacity.
