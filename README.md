@@ -110,11 +110,11 @@ pip install numpy matplotlib scipy tensorflow scikit-learn
 
 ```
 .
-├── D_R_CNN.ipynb                    # Full notebook
+├── D_R_CNN.ipynb                    # Full analysis notebook
 ├── README.md
 └── images/
-    ├── 01_sample_images.png
-    ├── 02_adam_training_curves.png
-    ├── 03_sgd_training_curves.png
-    └── 04_adam_vs_sgd_comparison.png
+    ├── 01_sample_images.png          # SVHN sample grid (32×32 crops)
+    ├── 02_adam_training_curves.png   # Adam loss/accuracy per epoch
+    ├── 03_sgd_training_curves.png    # SGD loss/accuracy per epoch
+    └── 04_adam_vs_sgd_comparison.png # Side-by-side optimizer comparison
 ```
