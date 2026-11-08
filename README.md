@@ -118,3 +118,8 @@ pip install numpy matplotlib scipy tensorflow scikit-learn
     ├── 03_sgd_training_curves.png    # SGD loss/accuracy per epoch
     └── 04_adam_vs_sgd_comparison.png # Side-by-side optimizer comparison
 ```
+
+## References
+
+- [SVHN Dataset](http://ufldl.stanford.edu/housenumbers/)
+- [TensorFlow/Keras Documentation](https://www.tensorflow.org/api_docs)
